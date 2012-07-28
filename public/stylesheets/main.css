@@ -1,0 +1,9 @@
+.logo {
+	height: 150px;
+	width: 150px;
+}
+
+.carousel .carousel-inner .item img {
+	height: 400px;
+	width: 700px;
+}
