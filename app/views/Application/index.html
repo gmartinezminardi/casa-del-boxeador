@@ -15,17 +15,31 @@ body {
 }
 </style>
 <link rel="shortcut icon" type="image/png" href="/public/images/favicon.ico">
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push([ '_setAccount', 'UA-33729720-1' ]);
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+</script>
 </head>
 <body>
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</a>
-				<a class="brand" href="#">Casa del Boxeador</a>
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"
+				></span>
+				</a> <a class="brand" href="#">Casa del Boxeador</a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li class="active"><a href="#">Home</a></li>
@@ -33,21 +47,17 @@ body {
 						<li><a href="#contact">Contacto</a></li>
 						<li><a href="#map">Mapa</a></li>
 					</ul>
-				</div><!--/.nav-collapse -->
+				</div>
+				<!--/.nav-collapse -->
 			</div>
 		</div>
 	</div>
 	<div class="container">
-	
 		<div class="hero-unit">
 			<h1>
-				<img class="logo" alt="Casa del Boxeador" src="/public/images/casa-del-boxeador-logo.jpg">
-				Casa del Boxeador
-				<br>
-				(En Construcción)
+				<img class="logo" alt="Casa del Boxeador" src="/public/images/casa-del-boxeador-logo.jpg"> Casa del Boxeador <br> (En Construcción)
 			</h1>
 		</div>
-		
 		<div class="row">
 			<div class="page-header"></div>
 			<div id="contact" class="span3 columns">
@@ -56,83 +66,56 @@ body {
 				<p>casadelboxeador@gmail.com</p>
 				<p>Profesor: Dardo Gimenez</p>
 			</div>
-			
-			
-			<div class="span9 columns">
-				#{include '/app/views/Application/carousel.html' /}
-			</div>
-			
+			<div class="span9 columns">#{include '/app/views/Application/carousel.html' /}</div>
 		</div>
-		
 		<div class="row">
-<!-- 			<div id="map_canvas" style="width:100%; height:100%"></div> -->
-
+			<!-- 			<div id="map_canvas" style="width:100%; height:100%"></div> -->
 			<div class="page-header"></div>
-			
 			<div class="span3 columns">
 				<h3>Dirección</h3>
 				<p>Bartolome Mitre 2020, Capital Federal</p>
 			</div>
-			
 			<div class="span9 columns">
 				<h3 id="map">Mapa</h3>
 				<p>Ubicación del gimnasio.</p>
-				
-				<iframe width="700" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.ar/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Bartolome+Mitre+2020&amp;aq=&amp;sll=-38.442157,-63.622274&amp;sspn=36.92804,64.863281&amp;ie=UTF8&amp;hq=&amp;hnear=Bartolom%C3%A9+Mitre+2020,+Balvanera,+Buenos+Aires&amp;t=m&amp;ll=-34.60665,-58.39551&amp;spn=0.028258,0.059996&amp;z=14&amp;output=embed"></iframe>
+				<iframe width="700" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+					src="https://maps.google.com.ar/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Bartolome+Mitre+2020&amp;aq=&amp;sll=-38.442157,-63.622274&amp;sspn=36.92804,64.863281&amp;ie=UTF8&amp;hq=&amp;hnear=Bartolom%C3%A9+Mitre+2020,+Balvanera,+Buenos+Aires&amp;t=m&amp;ll=-34.60665,-58.39551&amp;spn=0.028258,0.059996&amp;z=14&amp;output=embed"
+				></iframe>
 			</div>
 		</div>
-		
 	</div>
-
 	<!-- Le javascript 
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="/public/javascripts/jquery.js"></script>
-<!-- 	<script src="/public/javascripts/bootstrap-transition.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-alert.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-modal.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-dropdown.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-scrollspy.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-tab.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-tooltip.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-popover.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-button.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-collapse.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-carousel.js"></script> -->
-<!-- 	<script src="/public/javascripts/bootstrap-typeahead.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-transition.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-alert.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-modal.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-dropdown.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-scrollspy.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-tab.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-tooltip.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-popover.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-button.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-collapse.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-carousel.js"></script> -->
+	<!-- 	<script src="/public/javascripts/bootstrap-typeahead.js"></script> -->
 	<script src="/public/javascripts/bootstrap.js"></script>
-<!-- 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDXTWeW7M-D_br3fvQyNGruxFCpwVH4TDM&sensor=false"> -->
-		
+	<!-- 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDXTWeW7M-D_br3fvQyNGruxFCpwVH4TDM&sensor=false"> -->
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.carousel').carousel({
 				interval : 3000
 			});
-			
-// 			var mapOptions = {
-// 				center : new google.maps.LatLng(-34.397, 150.644),
-// 				zoom : 8,
-// 				mapTypeId : google.maps.MapTypeId.ROADMAP
-// 			};
-// 			var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
-		});
-	</script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-		_gaq.push([ '_setAccount', 'UA-33729720-1' ]);
-		_gaq.push([ '_trackPageview' ]);
 
-		(function() {
-			var ga = document.createElement('script');
-			ga.type = 'text/javascript';
-			ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-					: 'http://www')
-					+ '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(ga, s);
-		})();
+			// 			var mapOptions = {
+			// 				center : new google.maps.LatLng(-34.397, 150.644),
+			// 				zoom : 8,
+			// 				mapTypeId : google.maps.MapTypeId.ROADMAP
+			// 			};
+			// 			var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+		});
 	</script>
 </body>
 </html>
