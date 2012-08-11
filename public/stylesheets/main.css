@@ -1,11 +1,29 @@
+body {
+	background-color: #FCFDED;
+	padding-top: 60px;
+	/* 60px to make the container go all the way to the bottom of the topbar */
+}
+
+.hero-unit {
+	background-color: #F9EA82;
+}
+
+.hero-unit h1 {
+	color: #6B1614;
+	font-family: 'Bevan', cursive;
+	font-size: 64px;
+}
+
 .logo {
 	height: 150px;
 	width: 150px;
 }
 
 .carousel .carousel-inner .item img {
-	height: 400px;
+	height: 420px;
 	width: 700px;
 }
 
-#map_canvas { height: 100% }
+#map_canvas {
+	height: 100%;
+}
