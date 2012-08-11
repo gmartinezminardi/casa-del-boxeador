@@ -6,12 +6,13 @@ body {
 
 .hero-unit {
 	background-color: #F9EA82;
+	padding: 35px;
 }
 
 .hero-unit h1 {
 	color: #6B1614;
 	font-family: 'Bevan', cursive;
-	font-size: 64px;
+	font-size: 70px;
 }
 
 .logo {
