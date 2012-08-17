@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="La Casa del Boxeador es una asociación mutual dedicada a la enseñanaza del deporte del Boxeo.">
+<meta name="description" content="La Casa del Boxeador es una asociación mutual dedicada a la enseñanza del deporte del Boxeo.">
 <meta name="author" content="Victor M. Betrán">
 <meta name="keywords" content="casa del boxeador, boxeo, box, boxing, boxeador, boxeadores, entrenamiento, salud" />
 <link rel="canonical" href="http://casadelboxeador.com.ar/" />
@@ -79,7 +79,9 @@
 				<p>Profesor: Dardo Gimenez</p>
 			</div>
 			<div class="span9 columns">
-				<h3><a href="http://www.facebook.com/casadelboxeador">Facebook</a></h3>
+				<h3>
+					<a href="http://www.facebook.com/casadelboxeador">Facebook</a>
+				</h3>
 				<p>Seguí a la Casa del Boxeador en <a href="http://www.facebook.com/casadelboxeador">Facebook</a>, hacé click en <strong>Me Gusta</strong>.</p>
 				<!-- Facebook Like button -->
 				<div class="well">
@@ -129,6 +131,10 @@
 		$(document).ready(function() {
 			$('.carousel').carousel({
 				interval : 3000
+			});
+			
+			$().click(function() {
+				_gaq.push(['_trackEvent', 'facebook', 'me-gusta']);
 			});
 
 			// 			var mapOptions = {

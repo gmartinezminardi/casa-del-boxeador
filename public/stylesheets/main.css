@@ -25,6 +25,11 @@ body {
 	width: 700px;
 }
 
+.custom-facebook-icon {
+	height: 50px;
+	width: 50px;
+}
+
 #map_canvas {
 	height: 100%;
 }
